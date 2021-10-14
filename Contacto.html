@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automarket</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: blueviolet;">
+        <a class="text-white navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="text-white nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="text-white text-muted nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <form class="p-3 container" id="user-form" style="max-width: 40%;" novalidate>
+        <div class="form-group">
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" required class="form-control" id="name" placeholder="Escriba su nombre" size="25">
+            <div class="invalid-feedback">
+                Por favor Ingrese un Nombre
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electronico</label>
+            <input type="email" required class="form-control" id="email" placeholder="Escriba su Email">
+            <div class="invalid-feedback">
+                Por favor Ingrese un Email Valido
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="provincia-input">Provincia</label>
+            <select class="form-control" id="provincia-input">
+                <option>Buenos Aires</option>
+                <option>Capital Federal</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Ríos</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Río Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego</option>
+                <option>Tucumán</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="contact-text">Texto de Contacto</label>
+            <textarea class="form-control" id="ctext" rows="3" required></textarea>
+            <div class="invalid-feedback">
+                Por favor Ingrese Texto
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+    </form>
+
+    <footer class="footer mt-auto py-3" style="background-color: whitesmoke;">
+        <div class="container">
+            <p class="text-center">
+                <span class="text-muted">Llamenos al 000-0000, ubiquenos en Calle
+                    Falsa-123 o dejenos un correo en
+                    concesionariogenerico@hotmail.com</span>
+            </p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-minimal/minimal.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+
+</html>
